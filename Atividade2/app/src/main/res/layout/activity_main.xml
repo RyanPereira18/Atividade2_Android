@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="233dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/articleTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imagem_android" />
+
+    <TextView
+        android:id="@+id/articleTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="30dp"
+        android:text="Utilizando Imagens no Android"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/articleAuthor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/articleAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="26dp"
+        android:text="Ryan Mendes"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/articleContent"
+        app:layout_constraintEnd_toStartOf="@+id/articleDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/articleTitle" />
+
+    <TextView
+        android:id="@+id/articleDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="26dp"
+        android:text="17/04/2029"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/articleContent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toEndOf="@+id/articleAuthor"
+        app:layout_constraintTop_toBottomOf="@+id/articleTitle" />
+
+    <TextView
+        android:id="@+id/articleContent"
+        android:layout_width="336dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="128dp"
+        android:layout_weight="1"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aliquam accumsan porttitor diam nec faucibus.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Quisque vel auctor quam. Etiam dictum rutrum lacus,
+        in interdum odio posuere eu. Aliquam arcu dui, sagittis at ultricies vel, dictum non dolor.
+        Aliquam tincidunt est at enim volutpat, vel aliquet velit rutrum. Aliquam tincidunt est at enim volutpat,
+         vel aliquet velit rutrum. Aliquam tincidunt est at enim volutpat, vel aliquet velit rutrum."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="115dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:text="PRÓXIMO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previousButton" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:text="ANTERIOR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
